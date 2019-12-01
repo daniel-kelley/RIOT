@@ -76,9 +76,9 @@ extern "C" {
 #define LED2_ON             (PORTD &= ~LED2_MASK)
 #define LED2_TOGGLE         (PORTD ^=  LED2_MASK)
 #else
-#define LED0_ON             (PORTD |=  LED0_MASK)
-#define LED0_OFF            (PORTD &= ~LED0_MASK)
-#define LED0_TOGGLE         (PORTD ^=  LED0_MASK)
+#define LED0_ON             (PORTB |=  LED0_MASK)
+#define LED0_OFF            (PORTB &= ~LED0_MASK)
+#define LED0_TOGGLE         (PORTB ^=  LED0_MASK)
 #endif
 /** @} */
 
